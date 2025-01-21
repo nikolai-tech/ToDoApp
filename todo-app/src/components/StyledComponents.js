@@ -4,9 +4,13 @@ import styled from 'styled-components';
 export const AppContainer = styled.div`
 font-family: Arial, sans-serif;
 padding: 20px;
-background-color: #f9f9f9;
+background-color: #192734;
 min-height: 100vh;
+color: #ffffff;
+display: block;
+place-items: center;
 `;
+
 // Styled input field for adding new to-dos
 export const InputField = styled.input`
 padding: 10px;
@@ -16,38 +20,40 @@ margin-bottom: 10px;
 border: 1px solid #ccc;
 border-radius: 4px;
 `;
+
 // Styled button for adding new to-dos
 export const AddButton = styled.button`
 padding: 10px;
 font-size: 1rem;
-background-color: #4CAF50;
+background-color: #007acc;
 color: white;
 border: none;
 border-radius: 4px;
 cursor: pointer;
+
 &:hover {
-background-color: #45a049;
+background-color: #ff0000;
 }
 `;
+
 // Styled list item for each to-do
 export const TodoItem = styled.div`
-background-color: ${(props) => (props.completed ? '#d3ffd3' : '#fff')};
+background-color: ${(props) => (props.completed ? '#800080' : '#192734')};
 padding: 10px;
 border: 1px solid #ddd;
 margin-bottom: 10px;
 border-radius: 4px;
-display: flex;
-justify-content: space-between;
-align-items: center;
 `;
+
 // Button to delete a to-do
 export const DeleteButton = styled.button`
 background-color: #f44336;
-color: white;
-padding: 5px;
+color: #ffffff;
+padding: 10px;
 border: none;
 border-radius: 4px;
 cursor: pointer;
+
 &:hover {
 background-color: #e53935;
 }
